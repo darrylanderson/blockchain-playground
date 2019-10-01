@@ -8,7 +8,271 @@
       {
         "title": "Simple Diagram",
         "thumbnail": "./public/content/images/thumbnail.jpg",
-        "id": 0
+        "id": 0,
+        "diagramJson": {
+          "cells": [
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 344,
+                "y": 437
+              },
+              "angle": 0,
+              "id": "4ffa0f85-d252-4c77-9c56-ad95034d066a",
+              "z": 1,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "S3"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Store",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 601,
+                "y": 436
+              },
+              "angle": 0,
+              "id": "1fc45b13-d264-4e74-8fff-eec9d3f1f926",
+              "z": 2,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "PostgreSQL"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Process",
+              "size": {
+                "width": 100,
+                "height": 100
+              },
+              "position": {
+                "x": 505,
+                "y": 209
+              },
+              "angle": 0,
+              "id": "1c149b44-004f-44e7-a9aa-38d7127b4ef4",
+              "z": 3,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "API Service"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "1c149b44-004f-44e7-a9aa-38d7127b4ef4"
+              },
+              "target": {
+                "id": "4ffa0f85-d252-4c77-9c56-ad95034d066a"
+              },
+              "vertices": [],
+              "id": "8ee1c709-7256-4743-b16e-43f1fd29b8bb",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "https",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 4,
+              "hasOpenThreats": false,
+              "protocol": "https",
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "1c149b44-004f-44e7-a9aa-38d7127b4ef4"
+              },
+              "target": {
+                "id": "1fc45b13-d264-4e74-8fff-eec9d3f1f926"
+              },
+              "vertices": [
+                {
+                  "x": 597,
+                  "y": 351
+                },
+                {
+                  "x": 616,
+                  "y": 377
+                }
+              ],
+              "id": "078456ad-eabe-45f4-9f45-d10ee715c7ca",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "tcp",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 5,
+              "hasOpenThreats": false,
+              "isEncrypted": false,
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 542,
+                "y": 398
+              },
+              "target": {
+                "x": 390,
+                "y": 313
+              },
+              "vertices": [],
+              "id": "b7a836de-a092-425a-9b2e-9085b04ea6b9",
+              "z": 6,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Actor",
+              "size": {
+                "width": 160,
+                "height": 80
+              },
+              "position": {
+                "x": 455,
+                "y": 23
+              },
+              "angle": 0,
+              "id": "f8002b74-3a63-4d5a-bb70-92d81e402f48",
+              "z": 7,
+              "hasOpenThreats": false,
+              "attrs": {
+                ".element-shape": {
+                  "class": "element-shape hasNoOpenThreats isInScope"
+                },
+                "text": {
+                  "text": "Browser"
+                },
+                ".element-text": {
+                  "class": "element-text hasNoOpenThreats isInScope"
+                }
+              }
+            },
+            {
+              "type": "tm.Boundary",
+              "smooth": true,
+              "source": {
+                "x": 311,
+                "y": 167
+              },
+              "target": {
+                "x": 804,
+                "y": 169
+              },
+              "vertices": [],
+              "id": "a3dbe68f-1ffd-42d9-ad38-008b36d11520",
+              "z": 8,
+              "attrs": {}
+            },
+            {
+              "type": "tm.Flow",
+              "smooth": true,
+              "source": {
+                "id": "f8002b74-3a63-4d5a-bb70-92d81e402f48"
+              },
+              "target": {
+                "id": "1c149b44-004f-44e7-a9aa-38d7127b4ef4"
+              },
+              "vertices": [],
+              "id": "aeb2df70-5276-494e-98d0-e4a8e2375187",
+              "labels": [
+                {
+                  "position": 0.5,
+                  "attrs": {
+                    "text": {
+                      "text": "https",
+                      "font-weight": "400",
+                      "font-size": "small"
+                    }
+                  }
+                }
+              ],
+              "z": 9,
+              "hasOpenThreats": false,
+              "isEncrypted": true,
+              "isPublicNetwork": true,
+              "protocol": "https",
+              "attrs": {
+                ".marker-target": {
+                  "class": "marker-target hasNoOpenThreats isInScope"
+                },
+                ".connection": {
+                  "class": "connection hasNoOpenThreats isInScope"
+                }
+              }
+            }
+          ]
+        },
+        "size": {
+          "height": 2172.562744140625,
+          "width": 805.1342163085938
+        }
       }
     ]
   }
